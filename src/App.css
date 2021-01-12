@@ -1,8 +1,43 @@
 .App {
   text-align: center;
+  font-family: 'Russo One', sans-serif;
 }
 
-.App-logo {
+.social_wrapper {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  z-index: 50;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.hello {
+  padding-top: 75px;
+}
+
+.main_image {
+  margin-top: 100px;
+  height: 250px;
+  width: 250px;
+  border: solid 4px black;
+  border-radius: 100px;
+}
+
+.background_image_div {
+  height: 500px;
+  background-image: url("dungeon_crawler.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.icon_image {
+  height: 75px;
+  widows: 75px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -26,7 +61,8 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +72,4 @@
     transform: rotate(360deg);
   }
 }
+
