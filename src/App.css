@@ -11,6 +11,13 @@
   margin: 0px auto;
 }
 
+.main_image {
+  height: 350px;
+  width: 350px;
+  border: solid 4px black;
+  border-radius: 50px;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
