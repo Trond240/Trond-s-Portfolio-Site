@@ -18,6 +18,11 @@
   border-radius: 50px;
 }
 
+.icon_image {
+  height: 75px;
+  widows: 75px;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
