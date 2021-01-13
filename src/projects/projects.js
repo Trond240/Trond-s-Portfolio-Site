@@ -17,7 +17,7 @@ export const Projects = () => {
     console.log(space1)
 
     return (
-    <section className='projects_container'>
+    <section className='project_container'>
        <h1 className='heading'>Projects</h1>
        <div className='project_div'>
         <h1>Rad Rentals</h1>
