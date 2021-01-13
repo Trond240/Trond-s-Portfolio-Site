@@ -7,6 +7,7 @@ import gitIcon from './gitHub.png'
 import emailIcon from './email.jpeg'
 import {Projects} from './projects/projects.js'
 import {About} from './about/about.js'
+import {Contact} from './contact/contact.js'
 
 
 
@@ -27,6 +28,7 @@ function App() {
        </div>
        <About />
        <Projects />
+       <Contact />
       </header>
     </main>
   );
