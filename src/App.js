@@ -5,6 +5,8 @@ import linkIcon from './linkDin.jpeg'
 import resumeIcon from './resume.jpeg'
 import gitIcon from './gitHub.png'
 import emailIcon from './email.jpeg'
+import {Projects} from './projects/projects.js'
+import {About} from './about/about.js'
 
 
 
@@ -15,7 +17,6 @@ function App() {
       <header className='main-page'>
        <div className='background_image_div'>
         {/* <h1 className='hello'>Hello, I'm <span>Trond Makonese</span></h1> */}
-        <img src={trondImage} alt="Photo of Trond" className="main_image"></img>
         {/* <h1>A Front-End Web Developer</h1> */}
        </div>
        <div className='social_wrapper'>
@@ -24,6 +25,8 @@ function App() {
         <a href="https://www.linkedin.com/in/trond-makonese-05610115a/"><img src={linkIcon} alt='linkDin icon' className='icon_image'></img></a>
         <a href=''><img src={resumeIcon} alt='resume icon' className='icon_image'></img></a>
        </div>
+       <About />
+       <Projects />
       </header>
     </main>
   );
