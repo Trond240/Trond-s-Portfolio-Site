@@ -5,6 +5,7 @@ import linkIcon from './linkDin.jpeg'
 import resumeIcon from './resume.jpeg'
 import gitIcon from './gitHub.png'
 import emailIcon from './email.jpeg'
+import {Projects} from './projects/projects.js'
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <a href="https://www.linkedin.com/in/trond-makonese-05610115a/"><img src={linkIcon} alt='linkDin icon' className='icon_image'></img></a>
         <a href=''><img src={resumeIcon} alt='resume icon' className='icon_image'></img></a>
        </div>
+       <Projects />
       </header>
     </main>
   );
