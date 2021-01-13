@@ -1,14 +1,13 @@
 .project_img {
-    height: 300px;
+    height: 250px;
     width: 450px;
     margin: 10px;
-    border: solid black 4px;
-    border-radius: 20px;
+    border: solid black 1px;
+    border-radius: 15px;
 }
 
 .project_container {
     background-color: #383838;
-    justify-content: center;
 }
 
 .project_div {
@@ -17,5 +16,17 @@
     box-shadow: 5px 10px 18px #bbb;
     margin-bottom: 50px;
     padding: 20px;
-    width: 90%;
+    width: 95%;
+    justify-content: center;
+}
+
+.repo_button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 21px;
+    color: #000;
+    font-size: 80%;
+    margin: 2% 2% 0 0;
+    width: 130px;
 }
