@@ -1,4 +1,5 @@
 import React from 'react'
+import './about.css'
 import trondImage from '../image-of-trond.jpeg'
 
 

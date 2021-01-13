@@ -1,0 +1,12 @@
+.image_div, .about_section {
+    display: flex;
+    height: auto;
+    /* justify-content: center; */
+}
+
+.about_section {
+    background-color: #383838;
+    flex-direction: row;
+    padding-bottom: 50px;
+    width: 100%;
+}
