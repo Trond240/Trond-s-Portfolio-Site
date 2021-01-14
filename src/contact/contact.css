@@ -1,0 +1,9 @@
+.contact_section {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 70px;
+    width: 100%;
+}
