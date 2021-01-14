@@ -7,7 +7,7 @@ import emailIcon from '../email.jpeg'
 
 export const Contact = () => {
     return (
-        <section className='contact_section'>
+        <section className='contact_section' id='contact-section'>
             <h1 className='contact_message'>Please Feel Free to Contact me for work, suggestions, or networking</h1>
             <h2>Trond Makonese</h2>
             <h2>Denver, CO</h2>

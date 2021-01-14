@@ -5,7 +5,7 @@ import trondImage from '../image-of-trond.jpeg'
 
 export const About = () => {
     return (
-        <section className='about_section'>
+        <section className='about-section' id='about-section'>
             <div className='image_div'>
                 <img src={trondImage} alt="Photo of Trond" className="main_image"></img>
             </div>

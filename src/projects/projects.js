@@ -14,10 +14,8 @@ import dungeon2 from './images/dungeon2.jpeg'
 import dungeon3 from './images/dungeon3.jpeg'
 
 export const Projects = () => {
-    console.log(space1)
-
     return (
-    <section className='project_container'>
+    <section className='project_container' id='projects-section'>
        <h1 className='heading'>Projects</h1>
        <div className='project_div'>
         <h1>Rad Rentals</h1>

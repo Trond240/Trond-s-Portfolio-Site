@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import './navBar.css'
 
 export const NavBar = () => {
-    return (
-        <section className='navBarButtons'>
-            <button tabindex='0'>Home</button>
-            <button tabindex='1'>About</button>
-            <button tabindex='2'>Projects</button>
-            <button tabindex='3'>Contact</button>
-        </section>
-    )
+
+  smoothscroll.polyfill();
+
+
+  const performSmoothScroll = sectionName => {
+    document.querySelector(`#${sectionName}-section`).scrollIntoView({behavior: 'smooth'});
+  }
+
+  const printNavButtons = () => {
+    const navHeadings = ['home', 'about', 'projects', 'contact'];
+    const navButtons = navHeadings.map(heading => {
+      return <button tabIndex='0' aria-label={`${heading} section`} key={`${heading}`} onClick={() => performSmoothScroll(`${heading}`)} className='nav-buttons'>{`${heading}`}</button>
+    })
+    return navButtons;
+  }
+
+  return (
+    <nav>
+      <div className='navBarButtons'>
+        { printNavButtons() }
+      </div>
+    </nav>
+  );
 }
