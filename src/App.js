@@ -5,9 +5,10 @@ import linkIcon from './linkDin.jpeg'
 import resumeIcon from './resume.jpeg'
 import gitIcon from './gitHub.png'
 import emailIcon from './email.jpeg'
-import {Projects} from './projects/projects.js'
-import {About} from './about/about.js'
-import {Contact} from './contact/contact.js'
+import { Projects } from './projects/projects.js'
+import { About } from './about/about.js'
+import { Contact } from './contact/contact.js'
+import { NavBar } from './navBar/navBar.js'
 
 
 
@@ -15,6 +16,7 @@ import {Contact} from './contact/contact.js'
 function App() {
   return (
     <main className="App">
+      <NavBar />
       <header className='main-page'>
        <div className='background_image_div'>
         {/* <h1 className='hello'>Hello, I'm <span>Trond Makonese</span></h1> */}
