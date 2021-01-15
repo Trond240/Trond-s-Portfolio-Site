@@ -15,7 +15,7 @@ import { NavBar } from './navBar/navBar.js'
 
 function App() {
   return (
-    <main className="App" id='home-section'>
+    <main className="App" id='Home-section'>
       <NavBar />
       <header className='main-page'>
        <div className='background_image_div'>
