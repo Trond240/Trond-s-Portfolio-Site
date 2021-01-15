@@ -8,3 +8,8 @@
     width: 100%;
     /* z-index: 3; */
 }
+
+button:hover {
+    background: #66FCF1;
+    color: #fff;
+}

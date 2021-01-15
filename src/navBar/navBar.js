@@ -11,10 +11,10 @@ export const NavBar = () => {
     document.querySelector(`#${sectionName}-section`).scrollIntoView({behavior: 'smooth'});
   }
 
-  const printNavButtons = () => {
-    const navHeadings = ['home', 'about', 'projects', 'contact'];
+  const displayNavButtons = () => {
+    const navHeadings = ['Home', 'About', 'Projects', 'Contact'];
     const navButtons = navHeadings.map(heading => {
-      return <button tabIndex='0' aria-label={`${heading} section`} key={`${heading}`} onClick={() => performSmoothScroll(`${heading}`)} className='nav-buttons'>{`${heading}`}</button>
+      return <button tabIndex='0' aria-label={`${heading} section`} key={`${heading}`} onClick={() => performSmoothScroll(`${heading}`)} className='navBar-buttons'>{`${heading}`}</button>
     })
     return navButtons;
   }
@@ -22,7 +22,7 @@ export const NavBar = () => {
   return (
     <nav>
       <div className='navBarButtons'>
-        { printNavButtons() }
+        { displayNavButtons() }
       </div>
     </nav>
   );
