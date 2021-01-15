@@ -15,7 +15,7 @@ import dungeon3 from './images/dungeon3.jpeg'
 
 export const Projects = () => {
     return (
-    <section className='project_container' id='projects-section'>
+    <section className='project_container' id='Projects-section'>
        <h1 className='heading'>Projects</h1>
        <div className='project_div'>
         <h1>Rad Rentals</h1>
