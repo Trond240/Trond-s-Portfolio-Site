@@ -34,6 +34,11 @@
   widows: 75px;
 }
 
+button:hover {
+  background: #66FCF1;
+  color: #fff;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
