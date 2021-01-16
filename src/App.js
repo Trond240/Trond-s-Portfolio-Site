@@ -18,9 +18,9 @@ function App() {
     <main className="App" id='Home-section'>
       <NavBar />
       <header className='main-page'>
-       <div className='background_image_div'>
-        {/* <h1 className='hello'>Hello, I'm <span>Trond Makonese</span></h1> */}
-        {/* <h1>A Front-End Web Developer</h1> */}
+       <div className='background_div'>
+        <div className='rhex'></div>
+        <div className='title_div'><h1>Trond Makonese <br></br> Front End Developer</h1></div>
        </div>
        {/* <div className='social_wrapper'>
         <a href="mailto:trondation@gmail.com"><img src={emailIcon} alt='email icon' className='icon_image'></img></a>
