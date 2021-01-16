@@ -1,12 +1,12 @@
 .App {
-  /* text-align: center; */
-  font-family: 'Russo One', sans-serif;
+    /* text-align: center; */
+    font-family: 'Russo One', sans-serif;
 }
 
 .social_wrapper {
-  margin-top: 50px;
-  text-align: center;
-  width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
 }
 
 .hello {
@@ -14,30 +14,65 @@
 }
 
 .main_image {
-  margin-top: 100px;
-  height: 250px;
-  width: 250px;
-  border: solid 4px black;
-  border-radius: 100px;
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    border: solid 4px black;
+    border-radius: 100px;
+}
+.title_div {
+  text-align: center;
 }
 
-.background_image_div {
-  height: 500px;
-  background-image: url("dungeon_crawler.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+.title_div:hover {
+  font-size: 1.5em;
+  color:  #66FCF1;
 }
 
 .icon_image {
-  height: 75px;
-  widows: 75px;
+    height: 75px;
+    widows: 75px;
 }
 
 button:hover {
-  background: #66FCF1;
-  color: #fff;
+    background: #66FCF1;
+    border: solid 4px  #0B0C10;
+    color:  #0B0C10;
 }
+
+/* Code by Ana Tudor codepen link =>  https://codepen.io/thebabydino/pen/gFxzt*/
+
+body {
+  background: linear-gradient(90deg, 
+  #0B0C10 25%,  #0B0C10, #66FCF1 75%);
+}
+.rhex {
+  position: relative;
+  margin: 1em auto;
+  width: 10em; height: 17.32em;
+  border-radius: 1em/ .5em;
+  opacity: .25;
+  background: #66FCF1;
+  transition: opacity .5s;
+  /* cursor: pointer; */
+}
+.rhex:before, .rhex:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.rhex:before {
+  transform: rotate(60deg);
+}
+.rhex:after {
+  transform: rotate(-60deg);
+}
+.rhex:hover {
+  opacity: 1;
+}
+
 
 /* .App-logo {
   height: 40vmin;
