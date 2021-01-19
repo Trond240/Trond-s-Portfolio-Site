@@ -22,6 +22,10 @@ function App() {
         <div className='rhex'></div>
         <div className='title_div'><h1>Trond Makonese <br></br> Front End Developer</h1></div>
        </div>
+       {/* <div class="subject glowing">
+        <p class="message">Trond Makonese</p>
+        <p class="instruction">Front End Developer</p>
+      </div> */}
        {/* <div className='social_wrapper'>
         <a href="mailto:trondation@gmail.com"><img src={emailIcon} alt='email icon' className='icon_image'></img></a>
         <a href="//github.com/trond240"><img src={gitIcon} alt='gitHub icon' className='icon_image'></img></a>

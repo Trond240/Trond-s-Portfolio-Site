@@ -17,7 +17,7 @@
     margin-top: 100px;
     height: 250px;
     width: 250px;
-    border: solid 4px black;
+    border: solid 4px #0B0C10;
     border-radius: 100px;
 }
 .title_div {
@@ -71,6 +71,97 @@ body {
 }
 .rhex:hover {
   opacity: 1;
+}
+
+/* Frankie Law codepen => https://codepen.io/Cowwy/pen/BaaOKLv */
+
+:root {
+  /* COLOR PALLET */
+  --black     : rgba(0,     0,   0, 1.0);
+  --white     : rgba(255, 255, 255, 1.0); /* #FFFFFF */
+  --smoke     : rgba(204, 204, 204, 1.0); /* #CCCCCC */
+  --lightRose : rgba(255, 204, 204, 1.0); /* #FFCCCC */
+  --mintGreen : rgba(204, 255, 204, 1.0); /* #CCFFCC */
+  --lavender  : rgba(204, 204, 255, 1.0); /* #CCCCFF */
+  --banana    : rgba(255, 255, 204, 1.0); /* #FFFFCC */
+  --pink      : rgba(255, 204, 255, 1.0); /* #FFCCFF */
+  --cyan      : rgba(204, 255, 255, 1.0); /* #CCFFFF */
+  --menthol   : rgba(0,   216, 135, 1.0);
+  --yellow    : rgba(255, 255,   0, 1.0);
+  --tint      : rgba( 40,  40,  40, 0.85);
+  --cyanHot   : #8afbff;
+
+  /* ADJUSTMENT VARIABLE */
+  --animation-slowGlow-color : var(--mintGreen);
+}
+
+.glowing {
+  animation-name:slowGlow;
+  animation-duration:7.0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slowGlow {
+  0% { 
+    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color);
+   }
+
+   50% { 
+    text-shadow: 0px 0px 30px var(--animation-slowGlow-color),
+                  0px 0px 30px var(--animation-slowGlow-color), 
+                  0px 0px 20px var(--animation-slowGlow-color), 
+                  0px 0px 10px var(--animation-slowGlow-color), 
+                  0px 0px 5px  var(--animation-slowGlow-color), 
+                  0px 0px 5px  var(--animation-slowGlow-color);
+   }
+
+   100% { 
+    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color);
+   }
+}
+
+
+
+
+body {
+background-color:rgba( 23, 23, 23, 0.8 );
+}
+
+p {
+margin:0px;
+padding:10px;
+}
+
+
+.subject {
+width:50%;
+height:200px;
+
+position:absolute;
+top:0px; bottom:0px; left:0px; right:0px;
+margin:auto;
+
+text-align:center;
+}
+
+p.message {
+font-size:2.0vw;
+color:white;
+}
+
+p.instruction {
+color:white;
+font-size:1.6em;
 }
 
 

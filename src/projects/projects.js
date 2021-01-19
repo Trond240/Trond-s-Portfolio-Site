@@ -12,10 +12,13 @@ import rad3 from './images/rad3.png'
 import dungeon1 from './images/dungeon1.jpeg'
 import dungeon2 from './images/dungeon2.jpeg'
 import dungeon3 from './images/dungeon3.jpeg'
+// import {AnimatedButton} from "../styledComponents/animated-buttons.js";
+
 
 export const Projects = () => {
     return (
     <section className='project_container' id='Projects-section'>
+        {/* <AnimatedButton></AnimatedButton> */}
        <h1 className='heading'>Projects</h1>
        <div className='project_div'>
         <h1>Rad Rentals</h1>
