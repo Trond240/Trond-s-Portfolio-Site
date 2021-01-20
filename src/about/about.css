@@ -8,6 +8,11 @@
     width: 20%;
 }
 
+.headshot_image {
+    border-radius: 15px;
+    border: solid black 5px;
+}
+
 .about_text_container {
     width: 70%;
 }
@@ -26,3 +31,15 @@
     justify-content: center;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .about_section {
+      display: block;
+    }
+
+    .about_text_container, .image_div {
+        width: 95%;
+        margin: 20px;
+    }
+  }
+  
