@@ -20,7 +20,6 @@ function App() {
       <header className='main-page'>
        <div className='background_div'>
         <div className='rhex'></div>
-        <div className='title_div'><h1>Trond Makonese <br></br> Front End Developer</h1></div>
        </div>
        {/* <div class="subject glowing">
         <p class="message">Trond Makonese</p>
