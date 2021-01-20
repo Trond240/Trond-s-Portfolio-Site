@@ -26,3 +26,14 @@
     justify-content: center;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .about_section {
+      display: block;
+    }
+
+    .about_text_container, .image_div {
+        width: 100%;
+    }
+  }
+  
