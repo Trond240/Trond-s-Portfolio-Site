@@ -1,15 +1,12 @@
 .App {
-  text-align: center;
-  font-family: 'Russo One', sans-serif;
+    /* text-align: center; */
+    font-family: 'Russo One', sans-serif;
 }
 
 .social_wrapper {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.2em;
-  z-index: 50;
-  width: 100%;
-  margin: 0px auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
 }
 
 .hello {
@@ -17,25 +14,156 @@
 }
 
 .main_image {
-  margin-top: 100px;
-  height: 250px;
-  width: 250px;
-  border: solid 4px black;
-  border-radius: 100px;
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    border: solid 4px #0B0C10;
+    border-radius: 100px;
+}
+.title_div {
+  text-align: center;
 }
 
-.background_image_div {
-  height: 500px;
-  background-image: url("dungeon_crawler.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+.title_div:hover {
+  font-size: 1.5em;
+  color:  #66FCF1;
 }
 
 .icon_image {
-  height: 75px;
-  widows: 75px;
+    height: 75px;
+    widows: 75px;
 }
+
+button:hover {
+    background: #66FCF1;
+    border: solid 4px  #0B0C10;
+    color:  #0B0C10;
+}
+
+/* Code by Ana Tudor codepen link =>  https://codepen.io/thebabydino/pen/gFxzt*/
+
+body {
+  background: linear-gradient(90deg, 
+  #0B0C10 25%,  #0B0C10, #66FCF1 75%);
+}
+.rhex {
+  position: relative;
+  margin: 1em auto;
+  width: 10em; height: 17.32em;
+  border-radius: 1em/ .5em;
+  opacity: .25;
+  background: #66FCF1;
+  transition: opacity .5s;
+  /* cursor: pointer; */
+}
+.rhex:before, .rhex:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.rhex:before {
+  transform: rotate(60deg);
+}
+.rhex:after {
+  transform: rotate(-60deg);
+}
+.rhex:hover {
+  opacity: 1;
+}
+
+/* Frankie Law codepen => https://codepen.io/Cowwy/pen/BaaOKLv */
+
+:root {
+  /* COLOR PALLET */
+  --black     : rgba(0,     0,   0, 1.0);
+  --white     : rgba(255, 255, 255, 1.0); /* #FFFFFF */
+  --smoke     : rgba(204, 204, 204, 1.0); /* #CCCCCC */
+  --lightRose : rgba(255, 204, 204, 1.0); /* #FFCCCC */
+  --mintGreen : rgba(204, 255, 204, 1.0); /* #CCFFCC */
+  --lavender  : rgba(204, 204, 255, 1.0); /* #CCCCFF */
+  --banana    : rgba(255, 255, 204, 1.0); /* #FFFFCC */
+  --pink      : rgba(255, 204, 255, 1.0); /* #FFCCFF */
+  --cyan      : rgba(204, 255, 255, 1.0); /* #CCFFFF */
+  --menthol   : rgba(0,   216, 135, 1.0);
+  --yellow    : rgba(255, 255,   0, 1.0);
+  --tint      : rgba( 40,  40,  40, 0.85);
+  --cyanHot   : #8afbff;
+
+  /* ADJUSTMENT VARIABLE */
+  --animation-slowGlow-color : var(--mintGreen);
+}
+
+.glowing {
+  animation-name:slowGlow;
+  animation-duration:7.0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slowGlow {
+  0% { 
+    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color);
+   }
+
+   50% { 
+    text-shadow: 0px 0px 30px var(--animation-slowGlow-color),
+                  0px 0px 30px var(--animation-slowGlow-color), 
+                  0px 0px 20px var(--animation-slowGlow-color), 
+                  0px 0px 10px var(--animation-slowGlow-color), 
+                  0px 0px 5px  var(--animation-slowGlow-color), 
+                  0px 0px 5px  var(--animation-slowGlow-color);
+   }
+
+   100% { 
+    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color), 
+                  0px 0px 0px var(--animation-slowGlow-color);
+   }
+}
+
+
+
+
+body {
+background-color:rgba( 23, 23, 23, 0.8 );
+}
+
+p {
+margin:0px;
+padding:10px;
+}
+
+
+.subject {
+width:50%;
+height:200px;
+
+position:absolute;
+top:0px; bottom:0px; left:0px; right:0px;
+margin:auto;
+
+text-align:center;
+}
+
+p.message {
+font-size:2.0vw;
+color:white;
+}
+
+p.instruction {
+color:white;
+font-size:1.6em;
+}
+
 
 /* .App-logo {
   height: 40vmin;
