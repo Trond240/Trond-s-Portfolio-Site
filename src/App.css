@@ -1,5 +1,5 @@
 .App {
-    /* text-align: center; */
+    margin: 0px;
     font-family: 'Russo One', sans-serif;
 }
 
@@ -9,24 +9,16 @@
     width: 100%;
 }
 
+.background_div {
+    width: 100%;
+}
+
 .hello {
   padding-top: 75px;
 }
 
-.main_image {
-    margin-top: 100px;
-    height: 250px;
-    width: 250px;
-    border: solid 4px #0B0C10;
-    border-radius: 100px;
-}
 .title_div {
   text-align: center;
-}
-
-.title_div:hover {
-  font-size: 1.5em;
-  color:  #66FCF1;
 }
 
 .icon_image {
@@ -42,7 +34,7 @@ button:hover {
 
 /* Code by Ana Tudor codepen link =>  https://codepen.io/thebabydino/pen/gFxzt*/
 
-body {
+.background_div {
   background: linear-gradient(90deg, 
   #0B0C10 25%,  #0B0C10, #66FCF1 75%);
 }
