@@ -24,7 +24,8 @@
 }
 
 .about_text_container, .image_div {
-    background-color: #C5C6C7;
+    color: #fff;
+    background-color: #262626;
     border-radius: 15px;
     box-shadow: 1px 3px 5px #66FCF1;
     padding: 20px;
