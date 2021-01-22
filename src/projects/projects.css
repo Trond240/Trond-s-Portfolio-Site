@@ -16,7 +16,7 @@
     color: #fff;
     background-color: #262626;
     border-radius: 15px;
-    box-shadow: 1px 3px 5px #66FCF1;
+    box-shadow: 0px 0px 5px #66FCF1;
     margin: 20px;
     padding: 20px;
     width: 95%;
@@ -24,6 +24,7 @@
 }
 
 .repo_button {
+    font-family: 'Orbitron', sans-serif;
     cursor: pointer;
     background-color: black;
     color:  #66FCF1;
