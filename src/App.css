@@ -11,13 +11,15 @@
 
 .background_div {
     width: 100%;
+    color: #fff;
+    background-color: #262626;
 }
 
 .hello {
   padding-top: 75px;
 }
 
-.title_div {
+.title {
   text-align: center;
 }
 
@@ -36,7 +38,7 @@ button:hover {
 
 .background_div {
   background: linear-gradient(90deg, 
-  #0B0C10 25%,  #0B0C10, #66FCF1 75%);
+  #0B0C10 25%,  #262626, #66FCF1 75%);
 }
 .rhex {
   position: relative;
@@ -46,7 +48,6 @@ button:hover {
   opacity: .25;
   background: #66FCF1;
   transition: opacity .5s;
-  /* cursor: pointer; */
 }
 .rhex:before, .rhex:after {
   position: absolute;
