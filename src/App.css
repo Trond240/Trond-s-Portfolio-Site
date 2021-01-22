@@ -23,7 +23,7 @@
 
 .title {
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom: 8%;
 }
 
 .author_name {
@@ -36,7 +36,7 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes glow {
+/* @keyframes glow {
   50% {
     text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 10px rgb(255, 255, 255),
       0px 0px 20px rgb(255, 255, 255), 0px 0px 40px rgb(255, 255, 255),
@@ -49,6 +49,10 @@
       0px 0px 20px #66FCF1, 0px 0px 30px #66FCF1,
       0px 0px 60px rgb(255, 255, 255);
   }
+} */
+
+.view_more {
+  align-items: center;
 }
 
 
