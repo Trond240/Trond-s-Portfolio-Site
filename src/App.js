@@ -18,24 +18,16 @@ function App() {
     <main className="App" id='Home-section'>
       <NavBar />
       <header className='main-page'>
-       <div className='background_div'>
-        <div className='rhex'></div>
-        <h1 className='title'>Trond Makonese<br></br> Software Developer</h1>
-       </div>
-       {/* <div class="subject glowing">
-        <p class="message">Trond Makonese</p>
-        <p class="instruction">Front End Developer</p>
-      </div> */}
-       {/* <div className='social_wrapper'>
-        <a href="mailto:trondation@gmail.com"><img src={emailIcon} alt='email icon' className='icon_image'></img></a>
-        <a href="//github.com/trond240"><img src={gitIcon} alt='gitHub icon' className='icon_image'></img></a>
-        <a href="https://www.linkedin.com/in/trond-makonese-05610115a/"><img src={linkIcon} alt='linkDin icon' className='icon_image'></img></a>
-        <a href=''><img src={resumeIcon} alt='resume icon' className='icon_image'></img></a>
-       </div> */}
+        <div className='background_div'>
+          <div className='rhex'></div>
+          <div className='title'><h1><span className='author_name'>Trond Makonese</span><br></br><br></br>Software Developer</h1></div>
+        </div>
+       </header>
        <About />
        <Projects />
        <Contact />
-      </header>
+       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"></link>
     </main>
   );
 }

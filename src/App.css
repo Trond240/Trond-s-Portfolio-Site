@@ -1,6 +1,6 @@
 .App {
     margin: 0px;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .social_wrapper {
@@ -20,12 +20,17 @@
 }
 
 .title {
-  text-align: center;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.author_name {
+  font-size: 2.0em;
 }
 
 .icon_image {
-    height: 75px;
-    widows: 75px;
+      height: 75px;
+      widows: 75px;
 }
 
 button:hover {
@@ -37,89 +42,92 @@ button:hover {
 /* Code by Ana Tudor codepen link =>  https://codepen.io/thebabydino/pen/gFxzt*/
 
 .background_div {
-  background: linear-gradient(90deg, 
-  #0B0C10 25%,  #262626, #66FCF1 75%);
+    background: linear-gradient(90deg, 
+    #0B0C10 25%,  #262626, #66FCF1 75%);
 }
 .rhex {
-  position: relative;
-  margin: 1em auto;
-  width: 10em; height: 17.32em;
-  border-radius: 1em/ .5em;
-  opacity: .25;
-  background: #66FCF1;
-  transition: opacity .5s;
+    position: relative;
+    /* left: 0px;
+    top: 0px; */
+    /* z-index: -1; */
+    margin: 1em auto;
+    width: 10em; height: 17.32em;
+    border-radius: 1em/ .5em;
+    opacity: .25;
+    background: #66FCF1;
+    transition: opacity .5s;
 }
 .rhex:before, .rhex:after {
-  position: absolute;
-  width: inherit; height: inherit;
-  border-radius: inherit;
-  background: inherit;
-  content: '';
+    position: absolute;
+    width: inherit; height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
 }
 .rhex:before {
-  transform: rotate(60deg);
+    transform: rotate(60deg);
 }
 .rhex:after {
-  transform: rotate(-60deg);
+    transform: rotate(-60deg);
 }
 .rhex:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Frankie Law codepen => https://codepen.io/Cowwy/pen/BaaOKLv */
 
 :root {
   /* COLOR PALLET */
-  --black     : rgba(0,     0,   0, 1.0);
-  --white     : rgba(255, 255, 255, 1.0); /* #FFFFFF */
-  --smoke     : rgba(204, 204, 204, 1.0); /* #CCCCCC */
-  --lightRose : rgba(255, 204, 204, 1.0); /* #FFCCCC */
-  --mintGreen : rgba(204, 255, 204, 1.0); /* #CCFFCC */
-  --lavender  : rgba(204, 204, 255, 1.0); /* #CCCCFF */
-  --banana    : rgba(255, 255, 204, 1.0); /* #FFFFCC */
-  --pink      : rgba(255, 204, 255, 1.0); /* #FFCCFF */
-  --cyan      : rgba(204, 255, 255, 1.0); /* #CCFFFF */
-  --menthol   : rgba(0,   216, 135, 1.0);
-  --yellow    : rgba(255, 255,   0, 1.0);
-  --tint      : rgba( 40,  40,  40, 0.85);
-  --cyanHot   : #8afbff;
+    --black     : rgba(0,     0,   0, 1.0);
+    --white     : rgba(255, 255, 255, 1.0); /* #FFFFFF */
+    --smoke     : rgba(204, 204, 204, 1.0); /* #CCCCCC */
+    --lightRose : rgba(255, 204, 204, 1.0); /* #FFCCCC */
+    --mintGreen : rgba(204, 255, 204, 1.0); /* #CCFFCC */
+    --lavender  : rgba(204, 204, 255, 1.0); /* #CCCCFF */
+    --banana    : rgba(255, 255, 204, 1.0); /* #FFFFCC */
+    --pink      : rgba(255, 204, 255, 1.0); /* #FFCCFF */
+    --cyan      : rgba(204, 255, 255, 1.0); /* #CCFFFF */
+    --menthol   : rgba(0,   216, 135, 1.0);
+    --yellow    : rgba(255, 255,   0, 1.0);
+    --tint      : rgba( 40,  40,  40, 0.85);
+    --cyanHot   : #8afbff;
 
   /* ADJUSTMENT VARIABLE */
-  --animation-slowGlow-color : var(--mintGreen);
+    --animation-slowGlow-color : var(--mintGreen);
 }
 
 .glowing {
-  animation-name:slowGlow;
-  animation-duration:7.0s;
-  animation-iteration-count: infinite;
+    animation-name:slowGlow;
+    animation-duration:7.0s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes slowGlow {
-  0% { 
-    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color);
+    0% { 
+      text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color);
    }
 
    50% { 
-    text-shadow: 0px 0px 30px var(--animation-slowGlow-color),
-                  0px 0px 30px var(--animation-slowGlow-color), 
-                  0px 0px 20px var(--animation-slowGlow-color), 
-                  0px 0px 10px var(--animation-slowGlow-color), 
-                  0px 0px 5px  var(--animation-slowGlow-color), 
-                  0px 0px 5px  var(--animation-slowGlow-color);
+      text-shadow: 0px 0px 30px var(--animation-slowGlow-color),
+                    0px 0px 30px var(--animation-slowGlow-color), 
+                    0px 0px 20px var(--animation-slowGlow-color), 
+                    0px 0px 10px var(--animation-slowGlow-color), 
+                    0px 0px 5px  var(--animation-slowGlow-color), 
+                    0px 0px 5px  var(--animation-slowGlow-color);
    }
 
    100% { 
-    text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color), 
-                  0px 0px 0px var(--animation-slowGlow-color);
+      text-shadow: 0px 0px 0px var(--animation-slowGlow-color),
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color), 
+                    0px 0px 0px var(--animation-slowGlow-color);
    }
 }
 
@@ -127,34 +135,7 @@ button:hover {
 
 
 body {
-background-color:rgba( 23, 23, 23, 0.8 );
-}
-
-p {
-margin:0px;
-padding:10px;
-}
-
-
-.subject {
-width:50%;
-height:200px;
-
-position:absolute;
-top:0px; bottom:0px; left:0px; right:0px;
-margin:auto;
-
-text-align:center;
-}
-
-p.message {
-font-size:2.0vw;
-color:white;
-}
-
-p.instruction {
-color:white;
-font-size:1.6em;
+    background-color:rgba( 23, 23, 23, 0.8 );
 }
 
 
@@ -185,12 +166,12 @@ font-size:1.6em;
 } */
 
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
