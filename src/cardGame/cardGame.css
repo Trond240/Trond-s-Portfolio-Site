@@ -7,7 +7,9 @@
 }
 
 .game_board {
-    background-color: #0B0C10;
+    background-color: #262626;
+    box-shadow: 0px 0px 5px #66FCF1;
+    border-radius: 15px;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
