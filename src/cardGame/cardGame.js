@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
 
-class CardGame extends ReactComponent {
+class CardGame extends Component {
     constructor() {
         super();
-
+        this.state = {
+            cards: [],
+            matchedinto: 0
+        }
         
     }
 
