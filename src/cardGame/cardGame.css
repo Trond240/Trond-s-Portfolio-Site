@@ -1,5 +1,9 @@
 .game-section {
+    color: #66FCF1;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
     background-color: #0B0C10;
+    padding: 20px;
 }
 
 .game_board {

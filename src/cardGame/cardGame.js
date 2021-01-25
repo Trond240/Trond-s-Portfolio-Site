@@ -65,12 +65,18 @@ class CardGame extends Component {
     }
 
     render() {
-        console.log(this.state.cards)
+        const randomArray = this.state.cards.sort(() => 0.5 - Math.random());
+        console.log(randomArray)
         return (
-            <section className='game-section'>
+            <section className='game-section' id='Game-section'>
+                <h2>Guessing Game</h2>
+                <br></br>
+                <h2>Score: {this.state.matched}</h2>
                 <div className='game_board'>
-                    <Cards cardData={this.state.cards}/>
+                    <Cards cardData={randomArray}/>
                 </div>
+                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></link>
             </section>
         )
     }
