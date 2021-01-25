@@ -10,6 +10,7 @@ import { Projects } from './projects/projects.js'
 import { About } from './about/about.js'
 import { Contact } from './contact/contact.js'
 import { NavBar } from './navBar/navBar.js'
+import CardGame from './cardGame/cardGame.js'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         </div>
        </header>
        <About />
+       <CardGame />
        <Projects />
        <Contact />
        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
