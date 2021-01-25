@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Cards } from '../cards/cards.js'
+import './cardGame.css'
+
 
 class CardGame extends Component {
     constructor() {
@@ -66,7 +68,7 @@ class CardGame extends Component {
         console.log(this.state.cards)
         return (
             <section className='game-section'>
-                <div className='game-board'>
+                <div className='game_board'>
                     <Cards cardData={this.state.cards}/>
                 </div>
             </section>

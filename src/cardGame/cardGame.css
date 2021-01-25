@@ -1,0 +1,11 @@
+.game-section {
+    background-color: #0B0C10;
+}
+
+.game_board {
+    background-color: #0B0C10;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
