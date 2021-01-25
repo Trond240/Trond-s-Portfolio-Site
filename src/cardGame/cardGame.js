@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Cards } from '../cards/cards.js'
+import './cardGame.css'
+
 
 class CardGame extends Component {
     constructor() {
@@ -57,18 +59,29 @@ class CardGame extends Component {
                     flipped: false
                 },
             ],
-            matched: 0
+            matched: 0,
+            flipped: false
         }
         
     }
 
+    // flipCard = e => {
+    //     this.setState(prevState => ({ flipped: !prevState.flipped}))
+    // }
+
     render() {
-        console.log(this.state.cards)
+        const randomArray = this.state.cards.sort(() => 0.5 - Math.random());
+
         return (
-            <section className='game-section'>
-                <div className='game-board'>
-                    <Cards cardData={this.state.cards}/>
+            <section className='game-section' id='Game-section'>
+                <h2>Guessing Game</h2>
+                <br></br>
+                <h2>Score: {this.state.matched}</h2>
+                <div className='game_board'>
+                    <Cards cardData={randomArray} flipFunction={this.flipCard}/>
                 </div>
+                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></link>
             </section>
         )
     }

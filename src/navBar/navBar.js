@@ -11,7 +11,7 @@ export const NavBar = () => {
   }
 
   const displayNavButtons = () => {
-    const navHeadings = ['Home', 'About', 'Projects', 'Contact'];
+    const navHeadings = ['Home', 'About', 'Game', 'Projects', 'Contact'];
     const navButtons = navHeadings.map(heading => {
       return <button tabIndex='0' aria-label={`${heading} section`} key={`${heading}`} onClick={() => performSmoothScroll(`${heading}`)} className='navBar-buttons'>{`${heading}`}</button>
     })

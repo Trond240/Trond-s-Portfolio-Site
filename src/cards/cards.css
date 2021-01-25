@@ -1,0 +1,51 @@
+.cards {
+    justify-items: center;
+    border: solid 4px #66FCF1;
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.front {
+    display: none;
+}
+
+
+/* .front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    visibility: hidden;
+}
+
+.card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+ .card:active {
+   transform: scale(0.97);
+   transition: transform .3s;
+ }
+
+ .card.flip {
+  transform: rotateY(180deg);
+} */
+
+/* .flip_card:active {
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+
+.flip_card.flip {
+    transform: rotateY(180deg);
+  } */

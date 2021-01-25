@@ -76,9 +76,6 @@ button:hover {
 }
 .rhex {
     position: relative;
-    /* left: 0px;
-    top: 0px; */
-    /* z-index: -1; */
     margin: 1em auto;
     width: 10em; height: 17.32em;
     border-radius: 1em/ .5em;
