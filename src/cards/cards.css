@@ -1,0 +1,8 @@
+.cards {
+    justify-items: center;
+    border: solid 4px #66FCF1;
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
