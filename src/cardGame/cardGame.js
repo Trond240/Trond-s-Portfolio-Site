@@ -6,7 +6,7 @@ class CardGame extends Component {
         super();
         this.state = {
             cards: [],
-            matchedinto: 0
+            matched: 0
         }
         
     }
@@ -14,7 +14,9 @@ class CardGame extends Component {
     render() {
         return (
             <section className='game-section'>
-                <h1>Made it!</h1>
+                <div>
+                    <h1>Made it!</h1>
+                </div>
             </section>
         )
     }
