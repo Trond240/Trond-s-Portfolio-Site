@@ -2,7 +2,9 @@ import React, { Component, useState, useEffect, useRef  } from 'react'
 import './cardGame.css'
 
 export const CardGame = () => {
-    const [cardData, setCardData] = useState();
+    const [cardData, setCardData] = useState([])
+    const [flipCard, setFlipCard] = useState(false)
+    const [selectedCards, setSelectedCards] = useState([])
 
     const cards = [
                         {
@@ -58,12 +60,34 @@ export const CardGame = () => {
                     ]
 
     useEffect(() => {
-        if(!cards) {
-            setCardData(cards)
+        if(!cardData.length) {
+            let shuffled = cards.sort(() => .5 - Math.random())
+            return setCardData(shuffled)
         }
     }, [])
 
-    console.log(cards)
+    const handleFlip = (e, id) => {
+        if(!selectedCards.length) {
+            e.target.classList.remove('cards')
+            selectedCards.push(id)
+            console.log(selectedCards)
+        } else if(selectedCards.length === 1){
+            e.target.classList.remove('cards')
+            selectedCards.push(id)
+            console.log(selectedCards)
+            setTimeout(() => {
+                handleReset()
+            }, 1000)
+        }     
+    }
+
+    const handleReset = () => {
+            document.querySelector(`#card-${selectedCards[0]}`).classList.add('cards')
+            document.querySelector(`#card-${selectedCards[1]}`).classList.add('cards')
+            setSelectedCards([])       
+    }
+
+    console.log(selectedCards)
 
     return (
         <section className='game-section' id='Game-section'>
@@ -71,14 +95,16 @@ export const CardGame = () => {
                 <br></br>
                 <h2>Score: 0</h2>
                 <div className='game_board'>
-                        {cards.map(card => {
-                        return (
-                            <div key={card.id} id={card.id}className={`cards card${card.id}`}>
-                                <h3 className='front'>front</h3>
-                                <h3 className='back'>back</h3>
-                            </div>
-                        )
-                    })}
+                        {
+                            cardData.map(card => {
+                            return (
+                                <div key={card.id} id={`card-${card.id}`} className={'cards'} onClick={(e) => handleFlip(e, card.id)}>
+                                    <h3 className='front' alt='image-of-trond'>front</h3>
+                                    <h3 className='back' alt='back-card-image'>back</h3>
+                                </div>
+                            )
+                            })
+                        }
                 </div>
                 <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></link>
