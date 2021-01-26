@@ -4,7 +4,8 @@ import './cardGame.css'
 export const CardGame = () => {
     const [cardData, setCardData] = useState([])
     const [flipCard, setFlipCard] = useState(false)
-    // const [shuffleCards, setShuffledCards] = useState();
+    const [selectedCards, setSelectedCards] = useState([])
+
     const cards = [
                         {
                             id: 1,
@@ -58,13 +59,35 @@ export const CardGame = () => {
                         }
                     ]
 
-    let shuffled = cards.sort(() => .5 - Math.random())
-
     useEffect(() => {
-        if(!shuffled) {
+        if(!cardData.length) {
+            let shuffled = cards.sort(() => .5 - Math.random())
             return setCardData(shuffled)
         }
     }, [])
+
+    const handleFlip = (e, id) => {
+        if(!selectedCards.length) {
+            e.target.classList.remove('cards')
+            selectedCards.push(id)
+            console.log(selectedCards)
+        } else if(selectedCards.length === 1){
+            e.target.classList.remove('cards')
+            selectedCards.push(id)
+            console.log(selectedCards)
+            setTimeout(() => {
+                handleReset()
+            }, 1000)
+        }     
+    }
+
+    const handleReset = () => {
+            document.querySelector(`#card-${selectedCards[0]}`).classList.add('cards')
+            document.querySelector(`#card-${selectedCards[1]}`).classList.add('cards')
+            setSelectedCards([])       
+    }
+
+    console.log(selectedCards)
 
     return (
         <section className='game-section' id='Game-section'>
@@ -73,9 +96,9 @@ export const CardGame = () => {
                 <h2>Score: 0</h2>
                 <div className='game_board'>
                         {
-                            shuffled.map(card => {
+                            cardData.map(card => {
                             return (
-                                <div key={card.id} id={card.id} className={`cards card${card.id}`}>
+                                <div key={card.id} id={`card-${card.id}`} className={'cards'} onClick={(e) => handleFlip(e, card.id)}>
                                     <h3 className='front' alt='image-of-trond'>front</h3>
                                     <h3 className='back' alt='back-card-image'>back</h3>
                                 </div>
