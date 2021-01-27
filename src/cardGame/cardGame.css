@@ -12,11 +12,11 @@
     border-radius: 15px;
     justify-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.cards {
+.cards-back {
     justify-items: center;
     border: solid 4px #66FCF1;
     border-radius: 15px;
@@ -24,6 +24,36 @@
     width: 200px;
     height: 200px;
 }
+
+/* .back {
+    display: none
+} */
+
+/* .cards-front {
+    display: none;
+    justify-items: center;
+    border: solid 4px balck;
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+} */
+
+/* .cards-front {
+    display: none;
+    justify-items: center;
+    border: solid 4px #66FCF1;
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+} */
+
+/* .flip {
+    transform: rotateY(180deg);
+    transform: scale(0.97);
+    transition: transform .3s;
+} */
 
 /* .front {
     display: none;
