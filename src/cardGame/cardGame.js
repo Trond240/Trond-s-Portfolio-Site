@@ -82,15 +82,9 @@ export const CardGame = () => {
         }
     }, [])
 
-    // useLayoutEffect(() => {
-    //     const { current } = frontRef;
-
-    //     current.addEventListener.('cards-back', )
-    // })
-
     const handleFlip = (e, id) => {
         if(!selectedCards.length && frontRef) {
-            frontRef.classList.remove('hidden')
+            // frontRef.classList.remove('hidden')
             e.target.classList.remove('cards-back')
             // frontRef.current.remove('hidden')
             // e.target.classList.add('flip')
