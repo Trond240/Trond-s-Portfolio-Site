@@ -85,11 +85,13 @@ export const CardGame = () => {
     const handleFlip = (e, id) => {
         if(!selectedCards.length && frontRef) {
             e.target.classList.remove('cards-back')
+            e.target.classList.add('hidden')
             selectedCards.push(id)
             console.log(selectedCards)
         } else if(selectedCards.length && frontRef){
             console.log(frontRef)
             e.target.classList.remove('cards-back')
+            e.target.classList.add('hidden')
             selectedCards.push(id)
             console.log(selectedCards)
             setTimeout(() => {
@@ -100,7 +102,9 @@ export const CardGame = () => {
 
     const handleReset = () => {
             document.querySelector(`#card-${selectedCards[0]}`).classList.add('cards-back')
+            document.querySelector(`#card-${selectedCards[0]}`).classList.remove('hidden')
             document.querySelector(`#card-${selectedCards[1]}`).classList.add('cards-back')
+            document.querySelector(`#card-${selectedCards[1]}`).classList.remove('hidden')
             setSelectedCards([])       
     }
 
