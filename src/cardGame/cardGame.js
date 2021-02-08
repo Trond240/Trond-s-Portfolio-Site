@@ -142,10 +142,14 @@ export const CardGame = () => {
                         {
                             cardData.map(card => {
                             return (
-                                <div key={card.id} id={`card-${card.id}`} className='cards-back' onClick={(e) => handleFlip(e, card.id)}>
-                                    <h3 className='front hidden' alt='image-of-trond' ref={frontRef}>front</h3>
-                                    <h3 className='back' alt='back-card-image' ref={backRef}>back</h3>
-                                </div>
+                                <section>
+                                    <div key={card.id} id={`card-${card.id}`} className='cards-back' onClick={(e) => handleFlip(e, card.id)}>
+                                        <h3 className='back' alt='back-card-image'>back</h3>
+                                    </div>
+                                    <div key={card.id} id={`card-${card.id}`} className='cards-front hidden'>
+                                        <h3 className='front hidden' alt='image-of-trond'>front</h3>
+                                    </div>
+                                </section>                             
                             )
                             })
                         }
