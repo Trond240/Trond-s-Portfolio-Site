@@ -82,24 +82,16 @@ export const CardGame = () => {
         }
     }, [])
 
-    // useLayoutEffect(() => {
-    //     const { current } = frontRef;
-
-    //     current.addEventListener.('cards-back', )
-    // })
-
     const handleFlip = (e, id) => {
         if(!selectedCards.length && frontRef) {
-            frontRef.classList.remove('hidden')
             e.target.classList.remove('cards-back')
-            // frontRef.current.remove('hidden')
-            // e.target.classList.add('flip')
+            e.target.classList.add('hidden')
             selectedCards.push(id)
             console.log(selectedCards)
         } else if(selectedCards.length && frontRef){
             console.log(frontRef)
             e.target.classList.remove('cards-back')
-            // e.target.classList.add('flip')
+            e.target.classList.add('hidden')
             selectedCards.push(id)
             console.log(selectedCards)
             setTimeout(() => {
@@ -110,9 +102,9 @@ export const CardGame = () => {
 
     const handleReset = () => {
             document.querySelector(`#card-${selectedCards[0]}`).classList.add('cards-back')
+            document.querySelector(`#card-${selectedCards[0]}`).classList.remove('hidden')
             document.querySelector(`#card-${selectedCards[1]}`).classList.add('cards-back')
-            // document.querySelector(`#card-${selectedCards[0]}`).classList.remove('flip')
-            // document.querySelector(`#card-${selectedCards[1]}`).classList.remove('flip')
+            document.querySelector(`#card-${selectedCards[1]}`).classList.remove('hidden')
             setSelectedCards([])       
     }
 
@@ -148,10 +140,14 @@ export const CardGame = () => {
                         {
                             cardData.map(card => {
                             return (
-                                <div key={card.id} id={`card-${card.id}`} className='cards-back' onClick={(e) => handleFlip(e, card.id)}>
-                                    <h3 className='front hidden' alt='image-of-trond' ref={frontRef}>front</h3>
-                                    <h3 className='back' alt='back-card-image' ref={backRef}>back</h3>
-                                </div>
+                                <section>
+                                    <div key={card.id} id={`card-${card.id}`} className='cards-back' onClick={(e) => handleFlip(e, card.id)}>
+                                        <h3 className='back' alt='back-card-image'>back</h3>
+                                    </div>
+                                    <div key={card.id} id={`card-${card.id}`} className='cards-front hidden'>
+                                        <h3 className='front hidden' alt='image-of-trond'>front</h3>
+                                    </div>
+                                </section>                             
                             )
                             })
                         }
